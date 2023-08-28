@@ -76,7 +76,7 @@ justify-content: space-between;
 }
 .nav-links ul{
     justify-content: end;
-    gap: 40px; 
+    gap: 60px; 
 }
 .hover-link{
 color: var(--primary-text-color);
@@ -193,7 +193,8 @@ width: 40px;
     gap: 50px;
 }
 .content-img img{
-    width: 600px;
+    width: 100%;
+    /* width: 600px; */
 }
 .bfs-text{
     flex-direction: column;
@@ -242,6 +243,7 @@ width: 40px;
     position: relative;
     width: 23.5%;
     height: 344px;
+    
 }
 .examples-card:hover{
     transition: 0.2s ease-out;
@@ -273,7 +275,6 @@ width: 40px;
     right: 20px;
     color: white;
 }
-
 .examples-card::before {
     content: "";
     position:absolute;
@@ -282,7 +283,7 @@ width: 40px;
     width: 100%;
     height: 100%;
     background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8));
-  } 
+  }
   .cta-class-container{
     flex-direction: column;
     gap: 30px;
@@ -306,16 +307,22 @@ width: 40px;
     background-color: #EBF2FA;
   }
   .headings{
-    justify-content:space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
-    padding: 140px 104px 120px;
+    padding: 120px 104px 200px;
   }
-  .headings img{
+  .footer-img img{
     width: 200px;
+    justify-content: center;
   }
   .link-column{
     flex-direction: column;
+  
   }
 .nav-toggle{
     display: none;
+}
+.example-header{
+    margin-top: 50px;
+    gap: 5px;
 }
