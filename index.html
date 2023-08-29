@@ -19,17 +19,17 @@
             <a href="#" class="company-logo">
                 <img src="asset 1.png" alt="" srcset="">
             </a>
-            <div class="nav-links ">
+            <div class="nav-links " id="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover-link">Products</a></li>
                     <li><a href="#" class="hover-link">Customer</a></li>
                     <li><a href="#" class="hover-link">Pricing</a></li>
                     <li><a href="#" class="hover-link">Resources</a></li>
-                    <li><a href="#" class="hover-link secondary-button">Sign in</a></li>
-                    <li><a href="#" class="hover-link primary-button">Sign up</a></li>
+                    <li><a href="#" class="hover-link secondary-button res-button">Sign in</a></li>
+                    <li><a href="#" class="hover-link primary-button res-button">Sign up</a></li>
                 </ul>
             </div>
-            <a href="#" class="nav-toggle hover-link"><i class="fa-solid fa-bars"></i></a>
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle"><i class="fa-solid fa-bars"></i></a>
         </div>
     </nav>
 <header>
@@ -285,6 +285,13 @@
         </div>
     </div>
 </section>
+<script>
+    const toggleButton =  document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
 
+    toggleButton.addEventListener('click',()=>{
+        navLinks.classList.toggle('active');
+    })
+</script>
 </body>
 </html>

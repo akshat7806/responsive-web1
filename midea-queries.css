@@ -6,9 +6,6 @@
         display: flex;
         margin-right: 20px;
     }
-    .nav-links{
-        display: none;
-    }
     .example-area{
         gap: 15px;
         padding-inline: 0px;
@@ -20,6 +17,31 @@
     }
     .cta-section{
         padding-block:80px;
+    }
+    .nav-links ul{
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+    .primary-button{
+        width: 100%;
+        text-align: center;
+    }
+    .nav-links{
+        position: absolute;
+        background-color: white;
+        left: -100%;
+        top:100%;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.2s ease-in-out;
+    }
+    .nav-links.active{
+        left: 0;
+    }
+    .main-nav{
+        overflow: initial;
     }
 }
 @media screen and (max-width:767px){
@@ -63,4 +85,28 @@
 .link-column{
     padding-top: 20px;
 }
+}
+@media screen and (max-width:479px){
+    :root{
+        --padding-inline-section:10px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .features-card{
+        width: 100%;
+    }
+    .examples-card{
+        width: 100%;
+    }
+  
 }

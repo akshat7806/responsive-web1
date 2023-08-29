@@ -67,6 +67,7 @@ a{
 .main-nav{
 margin-top:20px; 
 justify-content: space-between;
+position: relative;
 }
 .company-logo img{
     width: 200px;
@@ -76,7 +77,7 @@ justify-content: space-between;
 }
 .nav-links ul{
     justify-content: end;
-    gap: 60px; 
+    gap: 40px; 
 }
 .hover-link{
 color: var(--primary-text-color);
@@ -164,6 +165,7 @@ width: 100%;
 }
 .features-header{
     text-align: center;
+    margin-bottom: 40px;
 }
 .features-heading-text{
    margin-bottom: 20px;
